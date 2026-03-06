@@ -17,43 +17,54 @@ connectCloudinary();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-const frontUrl = process.env.FRONTEND_URL  
+
+
 const allowedOrigins = [
- frontUrl || "mern-stack-project-ev3b.vercel.app"
+  "http://localhost:5173",
+  // process.env.FRONTEND_URL || "https://mern-stack-project-ev3b.vercel.app"
 ];
 
-// CORS
+
 app.use(
   cors({
-    origin: allowedOrigins,
-    credentials: true,
+    origin: function (origin, callback) {
+      // Allow requests with no origin (like Postman)
+      if (!origin) return callback(null, true);
+
+      if (allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error("Not allowed by CORS"));
+      }
+    },
+    credentials: true, 
   })
 );
-
 
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+
 app.use("/api", apiLimiter);
 
-app.get("/", (req, res) => {
-  res.send("API Working");
-});
 
+app.get("/", (req, res) => res.send("API Working"));
 app.use("/api/users", userRoutes);
 app.use("/api/products", productRoutes);
 app.use("/api/cart", cartRoutes);
 app.use("/api/orders", orderRoutes);
-
 app.use("/api/admin", adminRoutes);
 
-app.use((req, res) => {
+
+app.use((req, res, next) => {
   res.status(404);
-  throw new Error("Route not found");
+  next(new Error("Route not found"));
 });
 
+
 app.use(errorHandler);
+
 
 app.listen(PORT, () => {
   console.log(`Server is running on PORT: ${PORT}`);
