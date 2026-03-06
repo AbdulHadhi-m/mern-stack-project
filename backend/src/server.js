@@ -20,8 +20,8 @@ const PORT = process.env.PORT || 3000;
 
 
 const allowedOrigins = [
-  "http://localhost:5173",
-  // process.env.FRONTEND_URL || "https://mern-stack-project-ev3b.vercel.app"
+  
+  process.env.FRONTEND_URL || "https://mern-stack-project-ev3b.vercel.app"
 ];
 
 
