@@ -1,0 +1,518 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Admin",
+      "email": "Admin@example.com",
+      "password": "Admin@example.com",
+      "role": "admin"
+    },
+    {
+      "id": "1762701344112",
+      "name": "manu",
+      "email": "manu@gmail.com",
+      "password": "manu@gmail.com"
+    },
+    {
+      "id": "37cd",
+      "name": "hhh",
+      "email": "hhh7@gmail.com",
+      "password": "hhh7@gmail.com"
+    },
+    {
+      "id": "76c8",
+      "name": "shifin",
+      "email": "shifin@gmail.com",
+      "password": "shifin@gmail.com"
+    },
+    {
+      "id": "8491",
+      "name": "hadhi",
+      "email": "hadhi7@gmail.com",
+      "password": "hadhi7@gmail.com"
+    },
+    {
+      "id": "eb9f",
+      "name": "new",
+      "email": "new4@gmail.com",
+      "password": "new4@gmail.com"
+    },
+    {
+      "id": "de83",
+      "name": "niyas",
+      "email": "niyas2@gmail.com",
+      "password": "niyas2@gmail.com"
+    },
+    {
+      "id": "3934",
+      "name": "malik",
+      "email": "malik2@gmail.com",
+      "password": "malik2@gmail.com"
+    },
+    {
+      "id": "732e",
+      "name": "super",
+      "email": "super3@gmail.com",
+      "password": "super3@gmail.com"
+    },
+    {
+      "id": "0e71",
+      "name": "hadhi88",
+      "email": "hadhi88@gmail.com",
+      "password": "hadhi88@gmail.com"
+    },
+    {
+      "id": "7a37",
+      "name": "hadhi33",
+      "email": "hadhi33@gmail.com",
+      "password": "hadhi33@gmail.com"
+    },
+    {
+      "id": "c41d",
+      "name": "hhhhs",
+      "email": "hhhhs@gmail.com",
+      "password": "hhhhs@gmail.com"
+    },
+    {
+      "id": "0a6b",
+      "name": "sjaad",
+      "email": "sjaad@gmail.com",
+      "password": "sjaad@gmail.com"
+    },
+    {
+      "id": "318e",
+      "name": "shibili",
+      "email": "shibili@gmail.com",
+      "password": "shibili@gmail.com",
+      "role": "user"
+    },
+    {
+      "id": "f1e4",
+      "name": "newacc",
+      "email": "newacc@gmail.com",
+      "password": "newacc@gmail.com",
+      "role": "user",
+      "blocked": true
+    },
+    {
+      "id": "4a98",
+      "name": "white",
+      "email": "white@gmail.com",
+      "password": "white@gmail.com",
+      "role": "user"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Sunrise Apartments",
+      "price": 75000,
+      "location": "Downtown City",
+      "description": "Modern 2BHK apartment with balcony and park view.",
+      "images": "https://i.pinimg.com/1200x/ee/b3/fe/eeb3fe76bbfd163d205f81724e8a999d.jpg",
+      "categorie": "flat"
+    },
+    {
+      "id": "2",
+      "name": "Blue Horizon Towers",
+      "price": 92000,
+      "location": "Seaside Avenue",
+      "description": "Luxury 3BHK flat with ocean view and swimming pool access.",
+      "images": "https://i.pinimg.com/1200x/27/d8/15/27d81557b80bc87df54b16d410c48e9e.jpg",
+      "categorie": "flat"
+    },
+    {
+      "id": "3",
+      "name": "Green Valley Homes",
+      "price": 68000,
+      "location": "Hilltop Area",
+      "description": "Peaceful 2BHK surrounded by greenery and nature trails.",
+      "images": "https://i.pinimg.com/736x/b4/b7/85/b4b785f4815b81a3959b1fabbe5feb3b.jpg",
+      "categorie": "flat"
+    },
+    {
+      "id": "4",
+      "name": "Cityscape Residences",
+      "price": 89000,
+      "location": "Business District",
+      "description": "Stylish 3BHK apartment with skyline views.",
+      "images": "https://i.pinimg.com/736x/c5/f1/bb/c5f1bb3e38b7c3160c4b543b5d25c162.jpg",
+      "categorie": "flat"
+    },
+    {
+      "id": "5",
+      "name": "Golden Nest Villas",
+      "price": 150000,
+      "location": "Luxury Estate",
+      "description": "Spacious 4BHK villa with private garden and parking.",
+      "images": "https://i.pinimg.com/1200x/ef/1d/4b/ef1d4b774ca7dad886d508b33042c365.jpg",
+      "categorie": "flat"
+    },
+    {
+      "id": "6",
+      "name": "Riverfront Heights",
+      "price": 105000,
+      "location": "Riverside Road",
+      "description": "3BHK flat overlooking the river, premium interiors included.",
+      "images": "https://i.pinimg.com/736x/03/57/57/035757044071bccc8331eab070313b96.jpg",
+      "categorie": "flat"
+    },
+    {
+      "id": "7",
+      "name": "Pearl Residency",
+      "price": 82000,
+      "location": "North End",
+      "description": "2BHK modern apartment with gym and clubhouse access.",
+      "images": "https://i.pinimg.com/1200x/82/36/91/823691520c9718dfe7b3e0a156a77cc0.jpg",
+      "categorie": "flat"
+    },
+    {
+      "id": "8",
+      "name": "Silverline Apartments",
+      "price": 97000,
+      "location": "Metro Link Road",
+      "description": "3BHK apartment with easy transport access and park nearby.",
+      "images": "https://i.pinimg.com/1200x/e3/70/9d/e3709d99c1cedcf3c8511f7e2ee1d073.jpg",
+      "categorie": "flat"
+    },
+    {
+      "id": "9",
+      "name": "Palm View Residences",
+      "price": 115000,
+      "location": "Beachside Area",
+      "description": "Luxury 3BHK flat with sea-facing balcony and pool.",
+      "images": "https://i.pinimg.com/736x/29/e8/23/29e8230431a74be09b48e3020f68488f.jpg",
+      "categorie": "flat"
+    },
+    {
+      "id": "10",
+      "name": "Skyline Towers",
+      "price": 130000,
+      "location": "City Center",
+      "description": "Premium penthouse with rooftop lounge and smart home system.",
+      "images": "https://i.pinimg.com/1200x/3d/12/09/3d12096ef1cf2b06bc6577967bff42e7.jpg",
+      "categorie": "flat"
+    },
+    {
+      "id": "11",
+      "name": "Oakwood Villa",
+      "price": 145000,
+      "location": "Countryside",
+      "description": "Beautiful 4BHK house with garden and private driveway.",
+      "images": "https://i.pinimg.com/736x/d0/92/58/d09258c05988c49b4fb96797591dba6f.jpg",
+      "categorie": "house"
+    },
+    {
+      "id": "12",
+      "name": "Hillcrest Mansion",
+      "price": 220000,
+      "location": "Hilltop View",
+      "description": "Grand 5BHK mansion with panoramic mountain views.",
+      "images": "https://i.pinimg.com/736x/5b/24/b4/5b24b418b8b75fa28b7945229d88aff4.jpg",
+      "categorie": "house"
+    },
+    {
+      "id": "13",
+      "name": "Lakeside Retreat",
+      "price": 99000,
+      "location": "Lake Avenue",
+      "description": "3BHK home by the lake with wooden interiors and patio.",
+      "images": "https://i.pinimg.com/736x/34/51/e1/3451e14a6d4a977606ce996224b8e1ba.jpg",
+      "categorie": "house"
+    },
+    {
+      "id": "14",
+      "name": "Cedar Grove House",
+      "price": 88000,
+      "location": "Forest Edge",
+      "description": "Peaceful 3BHK surrounded by pine trees and nature trails.",
+      "images": "https://i.pinimg.com/736x/4e/56/dc/4e56dc5340c75151795ebdd386cc20e6.jpg",
+      "categorie": "house"
+    },
+    {
+      "id": "15",
+      "name": "Meadowbrook Cottage",
+      "price": 76000,
+      "location": "Village Lane",
+      "description": "Cozy 2BHK cottage perfect for small families.",
+      "images": "https://i.pinimg.com/1200x/1b/01/81/1b01810b088c928ad87536ac8cedd64c.jpg",
+      "categorie": "house"
+    },
+    {
+      "id": "16",
+      "name": "Palmstone Villa",
+      "price": 165000,
+      "location": "Seaside Colony",
+      "description": "4BHK villa with swimming pool and terrace garden.",
+      "images": "https://hips.hearstapps.com/hmg-prod/images/edc100123egan-002-6500742f5feb7.jpg?crop=0.9136xw:1xh;center,top&resize=1200:*",
+      "categorie": "house"
+    },
+    {
+      "id": "17",
+      "name": "Willow Creek Home",
+      "price": 97000,
+      "location": "Creekside Road",
+      "description": "3BHK house featuring open kitchen and deck view.",
+      "images": "https://i.pinimg.com/736x/84/11/35/84113561ec568815eff51833214e753e.jpg",
+      "categorie": "house"
+    },
+    {
+      "id": "18",
+      "name": "Elmwood Residency",
+      "price": 89000,
+      "location": "Central Avenue",
+      "description": "Elegant 3BHK home in a gated community.",
+      "images": "https://i.pinimg.com/736x/98/f9/44/98f9440e72c1030b1834c2d4419dce62.jpg",
+      "categorie": "house"
+    },
+    {
+      "id": "19",
+      "name": "Crystal Bay House",
+      "price": 128000,
+      "location": "Oceanfront Drive",
+      "description": "4BHK sea-facing home with pool and patio area.",
+      "images": "https://i.pinimg.com/1200x/fd/8f/15/fd8f15cc37877c16f79ed89032b7b593.jpg",
+      "categorie": "house"
+    },
+    {
+      "id": "20",
+      "name": "Stonebridge Estate",
+      "price": 200000,
+      "location": "Luxury Hills",
+      "description": "Magnificent 5BHK estate with smart home technology.",
+      "images": "https://i.pinimg.com/1200x/bc/e9/be/bce9be413ff139e7a0777d65d3ff6f46.jpg",
+      "categorie": "house"
+    },
+    {
+      "id": "21",
+      "name": "Urban Nest Apartment",
+      "price": 68000,
+      "location": "Downtown Block A",
+      "description": "Compact 1BHK apartment ideal for professionals.",
+      "images": "https://i.pinimg.com/1200x/f1/35/a1/f135a1e8b988cbbcd3b90286c1848f42.jpg",
+      "categorie": "apartment"
+    },
+    {
+      "id": "22",
+      "name": "Coral View Apartments",
+      "price": 95000,
+      "location": "Seaside Boulevard",
+      "description": "3BHK apartment with ocean breeze and private balcony.",
+      "images": "https://i.pinimg.com/1200x/49/1b/f3/491bf32f9d56c2a943a454c413c5a33e.jpg",
+      "categorie": "apartment"
+    },
+    {
+      "id": "23",
+      "name": "The Heights Tower",
+      "price": 108000,
+      "location": "Metro Central",
+      "description": "High-rise 3BHK apartment with city skyline view.",
+      "images": "https://i.pinimg.com/1200x/8a/44/b8/8a44b8edbb8c2de312b6eaa87a2a132c.jpg",
+      "categorie": "apartment"
+    },
+    {
+      "id": "24",
+      "name": "Maple Residency",
+      "price": 78000,
+      "location": "Garden Street",
+      "description": "2BHK with garden access and modern kitchen.",
+      "images": "https://i.pinimg.com/1200x/8f/16/bc/8f16bc34e4fdbe2c3f00a19c35e11894.jpg",
+      "categorie": "apartment"
+    },
+    {
+      "id": "25",
+      "name": "Skyline Apartment",
+      "price": 112000,
+      "location": "Downtown Heights",
+      "description": "Spacious 3BHK apartment with rooftop lounge.",
+      "images": "https://i.pinimg.com/1200x/41/d3/f0/41d3f0d75d056fbd663ecfabdc0cfb5b.jpg",
+      "categorie": "apartment"
+    },
+    {
+      "id": "26",
+      "name": "Royal Crest Apartments",
+      "price": 134000,
+      "location": "Kings Road",
+      "description": "Luxury 4BHK apartment with marble flooring.",
+      "images": "https://i.pinimg.com/1200x/04/f5/40/04f5404f59a67b865799ee37db3e88c2.jpg",
+      "categorie": "apartment"
+    },
+    {
+      "id": "27",
+      "name": "Ocean Pearl Apartments",
+      "price": 125000,
+      "location": "Marine Drive",
+      "description": "3BHK apartment with sea view and infinity pool.",
+      "images": "https://i.pinimg.com/1200x/93/9a/1d/939a1de76e4ff5dd16b6ef760d01421f.jpg",
+      "categorie": "apartment"
+    },
+    {
+      "id": "28",
+      "name": "Crystal Tower",
+      "price": 118000,
+      "location": "Business Bay",
+      "description": "Smart 3BHK apartment with IoT features.",
+      "images": "https://i.pinimg.com/1200x/88/87/8c/88878c8db5de7403c9f79aafdb731994.jpg",
+      "categorie": "apartment"
+    },
+    {
+      "id": "29",
+      "name": "Metro Edge Apartment",
+      "price": 88000,
+      "location": "Metro Line 2",
+      "description": "2BHK apartment close to public transport.",
+      "images": "https://i.pinimg.com/1200x/e4/f6/2a/e4f62a730dfb31636b96b1b7d6e1dddf.jpg",
+      "categorie": "apartment"
+    },
+    {
+      "id": "30",
+      "name": "Harmony Suites",
+      "price": 98000,
+      "location": "Peace Avenue",
+      "description": "3BHK apartment with community amenities and gym.",
+      "images": "https://i.pinimg.com/1200x/20/93/44/209344ab1c037e8c8dfb7a7247ed8d29.jpg",
+      "categorie": "apartment"
+    },
+    {
+      "id": "31",
+      "name": "Cozy Stay Room",
+      "price": 18000,
+      "location": "Central City",
+      "description": "Fully furnished single room with attached bathroom.",
+      "images": "https://i.pinimg.com/1200x/35/7c/f8/357cf8b8b9e8b67c5a08448b324e177a.jpg",
+      "categorie": "room"
+    },
+    {
+      "id": "32",
+      "name": "Comfort Inn Room",
+      "price": 22000,
+      "location": "West Street",
+      "description": "Spacious double room with balcony and kitchen access.",
+      "images": "https://i.pinimg.com/1200x/32/19/64/3219642dfce2c3b58fa48da73e4531b2.jpg",
+      "categorie": "room"
+    },
+    {
+      "id": "33",
+      "name": "Urban Studio",
+      "price": 25000,
+      "location": "Tech Park Road",
+      "description": "Modern studio room for professionals near metro station.",
+      "images": "https://i.pinimg.com/1200x/6b/f9/0a/6bf90a3fa585f2859cf83a42a6c56991.jpg",
+      "categorie": "room"
+    },
+    {
+      "id": "34",
+      "name": "Hilltop Room",
+      "price": 20000,
+      "location": "Highland Road",
+      "description": "Peaceful room with scenic mountain view.",
+      "images": "https://i.pinimg.com/1200x/6b/a2/2c/6ba22c1b962a8f1a552a9cb3d56b26db.jpg",
+      "categorie": "room"
+    },
+    {
+      "id": "35",
+      "name": "Budget Room Stay",
+      "price": 15000,
+      "location": "Old Town",
+      "description": "Affordable room ideal for students and travelers.",
+      "images": "https://i.pinimg.com/1200x/84/8d/b7/848db73a00a7e8ad0c0f650d76a5cc6f.jpg",
+      "categorie": "room"
+    },
+    {
+      "id": "36",
+      "name": "Seaside Studio",
+      "price": 27000,
+      "location": "Coastal Drive",
+      "description": "Compact studio room with ocean-facing balcony.",
+      "images": "https://i.pinimg.com/1200x/2c/df/53/2cdf539dd5f5714a9db327ac7c4cbab5.jpg",
+      "categorie": "room"
+    },
+    {
+      "id": "37",
+      "name": "Elite Stay Room",
+      "price": 30000,
+      "location": "Downtown Plaza",
+      "description": "Premium single room with smart home features.",
+      "images": "https://i.pinimg.com/1200x/1b/f5/53/1bf5531b54442c23f31bc7a071ba8841.jpg",
+      "categorie": "room"
+    },
+    {
+      "id": "b866",
+      "name": "new flat",
+      "price": "5678",
+      "location": "manjeri",
+      "description": "fghajslk",
+      "images": "https://i0.wp.com/stanzaliving.wpcomstaging.com/wp-content/uploads/2024/05/74f75-diffrence-between-a-flat-and-an-apartmetn.jpg?fit=1000%2C667&ssl=1",
+      "categorie": "flat"
+    }
+  ],
+  "orders": [
+    {
+      "id": "ORD-2024-001",
+      "userId": "1762701344112",
+      "userName": "manu",
+      "productName": "Sunrise Apartments",
+      "amount": 75000,
+      "date": "2024-12-15",
+      "status": "active"
+    },
+    {
+      "id": "ORD-2024-002",
+      "userId": "37cd",
+      "userName": "hhh",
+      "productName": "Blue Horizon Towers",
+      "amount": 92000,
+      "date": "2024-12-14",
+      "status": "pending"
+    },
+    {
+      "id": "ORD-2024-003",
+      "userId": "76c8",
+      "userName": "shifin",
+      "productName": "Cozy Stay Room",
+      "amount": 18000,
+      "date": "2024-12-10",
+      "status": "completed"
+    },
+    {
+      "id": "ORD-1765873513999",
+      "userId": "8491",
+      "userName": "hadhi",
+      "productName": "Blue Horizon Towers",
+      "amount": 92000,
+      "date": "2025-12-16",
+      "status": "active",
+      "image": "https://i.pinimg.com/1200x/27/d8/15/27d81557b80bc87df54b16d410c48e9e.jpg"
+    },
+    {
+      "id": "ORD-1765873554778",
+      "userId": "8491",
+      "userName": "hadhi",
+      "productName": "Green Valley Homes",
+      "amount": 68000,
+      "date": "2025-12-16",
+      "status": "active",
+      "image": "https://i.pinimg.com/736x/b4/b7/85/b4b785f4815b81a3959b1fabbe5feb3b.jpg"
+    },
+    {
+      "id": "ORD-1765873667319",
+      "userId": "37cd",
+      "userName": "hhh",
+      "productName": "Blue Horizon Towers",
+      "amount": 92000,
+      "date": "2025-12-16",
+      "status": "active",
+      "image": "https://i.pinimg.com/1200x/27/d8/15/27d81557b80bc87df54b16d410c48e9e.jpg"
+    },
+    {
+      "id": "ORD-1765873989444-777",
+      "userId": "8491",
+      "userName": "hadhi",
+      "productName": "Green Valley Homes",
+      "amount": 68000,
+      "date": "2025-12-16",
+      "status": "active",
+      "image": "https://i.pinimg.com/736x/b4/b7/85/b4b785f4815b81a3959b1fabbe5feb3b.jpg"
+    }
+  ]
+}
