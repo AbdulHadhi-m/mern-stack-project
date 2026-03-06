@@ -20,7 +20,7 @@ function UserManager() {
         try {
             const userLoggedIn = JSON.parse(localStorage.getItem("loggedInUser"));
             const token = userLoggedIn?.token;
-            await axios.put(`http://localhost:3000/api/admin/user/toggle/${user._id}`, {}, {
+            await axios.put(`${import.meta.env.VITE_API_URL}/api/admin/user/toggle/${user._id}`, {}, {
                 headers: { Authorization: `Bearer ${token}` }
             });
             toast.success(`User ${user.isBlocked ? 'unblocked' : 'blocked'} successfully`);

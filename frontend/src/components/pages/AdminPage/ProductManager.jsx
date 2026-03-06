@@ -39,10 +39,10 @@ function ProductManager() {
             const config = { headers: { Authorization: `Bearer ${userToken}` } }; // multer handles form-data boundary automatically
 
             if (isEditing) {
-                await axios.put(`http://localhost:3000/api/admin/product/${currentProduct._id}`, formData, config);
+                await axios.put(`${import.meta.env.VITE_API_URL}/api/admin/product/${currentProduct._id}`, formData, config);
                 toast.success("Product Updated Successfully");
             } else {
-                await axios.post('http://localhost:3000/api/admin/product', formData, config);
+                await axios.post(`${import.meta.env.VITE_API_URL}/api/admin/product`, formData, config);
                 toast.success("Product Added Successfully");
             }
             setShowModal(false);
@@ -60,7 +60,7 @@ function ProductManager() {
         if (window.confirm("Are you sure you want to delete this product?")) {
             try {
                 const userToken = JSON.parse(localStorage.getItem("loggedInUser"))?.token;
-                await axios.delete(`http://localhost:3000/api/admin/product/${id}`, { headers: { Authorization: `Bearer ${userToken}` } });
+                await axios.delete(`${import.meta.env.VITE_API_URL}/api/admin/product/${id}`, { headers: { Authorization: `Bearer ${userToken}` } });
                 toast.success("Product Deleted");
                 fetchData();
             } catch (error) {

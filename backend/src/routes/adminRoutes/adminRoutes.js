@@ -1,5 +1,5 @@
 import express from "express";
-import { adminLogin } from "../../controllers/adminController/adminController.js";
+import { adminLogin, getDashboardStats } from "../../controllers/adminController/adminController.js";
 import {
   toggleUserBlock,
   getAllUsers,
@@ -15,23 +15,19 @@ import {
   deleteProduct,
 } from "../../controllers/adminController/adminProductController.js";
 import {
-  getAllUsersTotalPurchased,
-  getTotalRevenue,
-  getAllOrders,
+  getAllOrders
 } from "../../controllers/adminController/adminOrderController.js";
 import uploadProduct from "../../middlewares/uploadProduct.js";
 
 const router = express.Router();
 
 router.post("/", adminLogin);
+router.get("/dashboard-stats", protect, adminOnly, getDashboardStats);
 router.get("/users", protect, adminOnly, getAllUsers);
 router.get("/users/:id", protect, adminOnly, getUserById);
 router.put("/user/toggle/:id", protect, adminOnly, toggleUserBlock);
 router.delete("/user/:id", protect, adminOnly, permanentDeleteUser);
-// router.get("/category/:category", protect, adminOnly, getProductByCategory);
 router.get("/products", protect, adminOnly, getAdminAllProducts);
-router.get("/totalPurchase", protect, adminOnly, getAllUsersTotalPurchased);
-router.get("/totalRev", protect, adminOnly, getTotalRevenue);
 router.get("/allOrders", protect, adminOnly, getAllOrders);
 
 router.post(

@@ -3,7 +3,7 @@ import axios from "axios";
 import { Link, useParams } from "react-router-dom";
 import toast from "react-hot-toast";
 
-const API_BASE = "http://localhost:3000/api/products";
+const API_BASE =`${import.meta.env.VITE_API_URL}/api/products`;
 
 function ProductDetails() {
   const { id } = useParams();
@@ -38,7 +38,7 @@ function ProductDetails() {
       const token = JSON.parse(userStr).token;
 
       await axios.post(
-        "http://localhost:3000/api/cart",
+        `${import.meta.env.VITE_API_URL}/api/cart`,
         { productId: product._id },
         { headers: { Authorization: `Bearer ${token}` } }
       );

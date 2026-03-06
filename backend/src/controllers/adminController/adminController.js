@@ -1,18 +1,19 @@
 import asyncHandler from "express-async-handler";
 import User from "../../models/UserModel.js";
+import Product from "../../models/ProductModel.js";
+import Order from "../../models/OrderModel.js";
 import bcrypt from "bcryptjs";
 import generateToken from "../../utils/generateToken.js";
-
 
 export const adminLogin = asyncHandler(async (req, res) => {
   const { email, password } = req.body;
 
   if (!email || !password) {
     res.status(400);
-    throw new Error("Email and password are required");
+    throw new Error("Email and password are required");                
   }
 
-  
+
   const admin = await User.findOne({
     email,
     role: "admin",
@@ -41,5 +42,39 @@ export const adminLogin = asyncHandler(async (req, res) => {
       role: admin.role,
       token: generateToken(admin._id, admin.role),
     },
+  });
+});
+
+export const getDashboardStats = asyncHandler(async (req, res) => {
+  const totalProducts = await Product.countDocuments({ isDeleted: false });
+  const totalUsers = await User.countDocuments();
+  const totalOrders = await Order.countDocuments();
+
+  const valueAggregation = await Product.aggregate([
+    { $match: { isDeleted: false } },
+    { $group: { _id: null, totalValue: { $sum: "$price" } } }
+  ]);
+  const totalValue = valueAggregation.length > 0 ? valueAggregation[0].totalValue : 0;
+
+  const categoryAggregation = await Product.aggregate([
+    { $match: { isDeleted: false } },
+    { $group: { _id: "$category", count: { $sum: 1 } } }
+  ]);
+
+  const categoryStats = categoryAggregation.reduce((acc, curr) => {
+    const cat = curr._id || "Uncategorized";
+    acc[cat] = curr.count;
+    return acc;
+  }, {});
+
+  res.status(200).json({
+    success: true,
+    data: {
+      totalProducts,
+      totalUsers,
+      totalOrders,
+      totalValue,
+      categoryStats,
+    }
   });
 });

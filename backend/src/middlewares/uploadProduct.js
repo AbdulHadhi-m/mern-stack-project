@@ -15,4 +15,4 @@ const uploadProduct = multer({
   limits: { fileSize: 2 * 1024 * 1024 },
 });
 
-export default uploadProduct;
+export default uploadProduct; 

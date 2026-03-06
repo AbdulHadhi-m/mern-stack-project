@@ -23,10 +23,10 @@ export const AdminProvider = ({ children }) => {
 
         try {
             const [productsRes, usersRes, ordersRes, statsRes] = await Promise.allSettled([
-                axios.get('http://localhost:3000/api/admin/products', config),
-                axios.get('http://localhost:3000/api/admin/users', config),
-                axios.get('http://localhost:3000/api/admin/allOrders', config),
-                axios.get('http://localhost:3000/api/admin/dashboard-stats', config)
+              axios.get(`${import.meta.env.VITE_API_URL}/api/admin/products`, config),
+              axios.get(`${import.meta.env.VITE_API_URL}/api/admin/users`, config),
+              axios.get(`${import.meta.env.VITE_API_URL}/api/admin/allOrders`, config),
+              axios.get(`${import.meta.env.VITE_API_URL}/api/admin/dashboard-stats`, config)
             ]);
 
             if (productsRes.status === 'fulfilled') setProducts(productsRes.value.data.products || []);

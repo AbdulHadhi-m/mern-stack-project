@@ -17,4 +17,4 @@ const validate = (schema) => {
   };
 };
 
-export default validate;
+export default validate;      
