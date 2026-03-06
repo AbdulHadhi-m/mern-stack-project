@@ -17,9 +17,9 @@ connectCloudinary();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-const frontUrl = process.env.FRONTEND_URL  || "mern-stack-project-ev3b.vercel.app"
+const frontUrl = process.env.FRONTEND_URL  
 const allowedOrigins = [
- frontUrl
+ frontUrl || "mern-stack-project-ev3b.vercel.app"
 ];
 
 // CORS
