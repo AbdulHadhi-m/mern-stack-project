@@ -16,7 +16,6 @@ connectDB();
 connectCloudinary();
 
 const app = express();
-const PORT = process.env.PORT || 3000;
 
 const allowedOrigins = [
   process.env.FRONTEND_URL,
@@ -46,6 +45,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/api", apiLimiter);
 
 app.get("/", (req, res) => res.send("API Working"));
+
 app.use("/api/users", userRoutes);
 app.use("/api/products", productRoutes);
 app.use("/api/cart", cartRoutes);
@@ -59,6 +59,4 @@ app.use((req, res, next) => {
 
 app.use(errorHandler);
 
-app.listen(PORT, () => {
-  console.log(`Server is running on PORT: ${PORT}`);
-});
+export default app;
