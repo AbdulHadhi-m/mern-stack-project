@@ -2,49 +2,33 @@ import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
 import { connectDB } from "./config/db.js";
+import connectCloudinary from "./config/cloudinary.js";
+
 import userRoutes from "./routes/userRoutes.js";
-import errorHandler from "./middlewares/errorMiddleware.js";
-import adminRoutes from "./routes/adminRoutes/adminRoutes.js";
 import productRoutes from "./routes/productRoutes.js";
 import cartRoutes from "./routes/cartRoutes.js";
 import orderRoutes from "./routes/orderRoutes.js";
-import connectCloudinary from "./config/cloudinary.js";
+import adminRoutes from "./routes/adminRoutes/adminRoutes.js";
+
+import errorHandler from "./middlewares/errorMiddleware.js";
 import { apiLimiter } from "./middlewares/rateLimiter.js";
 
 dotenv.config();
-connectDB();
-connectCloudinary();
 
 const app = express();
 
-const allowedOrigins = [
-  process.env.FRONTEND_URL,
-  "http://localhost:5173"
-];
+connectDB();
+connectCloudinary();
 
-app.use(
-  cors({
-    origin: function (origin, callback) {
-      if (!origin || allowedOrigins.includes(origin)) {
-        callback(null, true);
-      } else {
-        callback(new Error("Not allowed by CORS"));
-      }
-    },
-    credentials: true,
-    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-    allowedHeaders: ["Content-Type", "Authorization"]
-  })
-);
-
-app.options("*", cors());
-
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use("/api", apiLimiter);
 
-app.get("/", (req, res) => res.send("API Working"));
+app.get("/", (req, res) => {
+  res.send("API Working");
+});
 
 app.use("/api/users", userRoutes);
 app.use("/api/products", productRoutes);
